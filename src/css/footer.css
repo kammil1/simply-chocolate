@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
   }
+  .footer
+  {
+  background-color:#1E1823;;
+  }
+
 
   .container {
     padding: 0 15px;
