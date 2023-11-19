@@ -56,9 +56,9 @@ ol {
 }
 
 .hero-background {
-  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
-    url(<path-to-image>), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
-  background-image: url(../images/hero/cocoa-powder-mobile.jpg);
+  /* background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+    url(), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+  background-image: url(); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
