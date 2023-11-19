@@ -87,6 +87,10 @@ padding-bottom: 32px;
   {
     padding-top: 14px;
   }
+  .footer_end li
+  {
+    padding-bottom:18px;
+  }
   .fotter_links
   {
     gap:4px;
@@ -97,7 +101,7 @@ padding-bottom: 32px;
   .footer_end
   {
     padding-top: 32px;
-    gap:18px;
+    padding-bottom: 18px;
   }
   .footer_contacts
   {
@@ -109,18 +113,28 @@ font-style: normal;
 font-weight: 500;
 line-height: 18px; /* 128.571% */
   }
-  @media screen and (min-width: 375px) {
-    .container {
-      width: 428px;
+  @media screen and (min-width:375px) and (max-width: 767px) {
+    .container{
+    width: 767px;
+    
+    }
+    .image
+    {
+    width:100%;
     }
   }
-  @media screen and (min-width: 768px) {
-    .container {
-      width: 768px;
+  @media screen and ( min-width: 768px) 
+  {
+    .container
+    {
+      width: 768px;;
     }
-  }
-  @media screen and (min-width: 1200px) {
-    .container {
-      width: 1158px;
+    .footer_end
+    
+    {
+      display: flex;
+      gap:24px;
+      
     }
+
   }
