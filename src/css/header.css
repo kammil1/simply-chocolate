@@ -36,7 +36,7 @@
         margin-right: 138px;
     }
 
-    /*hamburger do mobile menu*/
+/*hamburger do mobile menu*/
 
     .menu-toggle.open {
         margin-right: 20px;
@@ -60,7 +60,7 @@
 }
 
 /*tablet*/
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
     .header {
         display: flex;
         justify-content: center;
@@ -97,7 +97,7 @@
         margin-right: 503px;
     }
 
-    /*hamburger do mobile menu*/
+/*hamburger do mobile menu*/
 
     .menu-toggle.open {
         margin-right: 32px;
