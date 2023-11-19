@@ -1,0 +1,202 @@
+/*mobile*/
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo-link-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo-link {
+        text-decoration: none;
+        color: var(--color-one);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: -0.42px;
+        margin-left: 20px;
+        margin-top: 25px;
+        margin-right: 4px;
+        margin-bottom: 19px;
+    }
+
+    .header-logo-link-icons {
+        fill: var(--color-four);
+        margin-right: 138px;
+    }
+
+    /*hamburger do mobile menu*/
+
+    .menu-toggle.open {
+        margin-right: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+    }
+
+    .header-navigation-hamburger-icons {
+        fill: var(--color-one);
+    }
+
+    .header-navigation-ul {
+        display: none;
+    }
+
+    .header-social-media-icons-ul {
+        display: none;
+    }
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo-link-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo-link {
+        text-decoration: none;
+        color: var(--color-one);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: -0.42px;
+        margin-left: 32px;
+        margin-top: 31px;
+        margin-bottom: 31px;
+        margin-right: 4px;
+    }
+
+    .header-logo-link-icons {
+        fill: var(--color-four);
+        margin-right: 503px;
+    }
+
+    /*hamburger do mobile menu*/
+
+    .menu-toggle.open {
+        margin-right: 32px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+    }
+
+    .header-navigation-hamburger-icons {
+        fill: var(--color-one);
+    }
+
+    .header-navigation-ul {
+        display: none;
+    }
+
+    .header-social-media-icons-ul {
+        display: none;
+    }
+}
+
+/*desktop*/
+@media (min-width: 1200px) {
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-navigation {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .header-logo-link-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-logo-link {
+        text-decoration: none;
+        color: var(--color-one);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: -0.54px;
+        margin-left: 32px;
+        margin-right: 4px;
+    }
+
+    .header-logo-link-icons {
+        fill: var(--color-four);
+        margin-right: 188px;
+    }
+
+    /*hamburger do mobile menu*/
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .header-navigation-ul {
+        list-style: none;
+        display: flex;
+        gap: 24px;
+    }
+
+    .header-navigation-link {
+        text-decoration: none;
+        color: var(--color-one);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: -0.28px;
+        margin-top: 28px;
+        margin-bottom: 36px;
+    }
+
+    .header-social-media-icons-ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-left: 137px;
+        gap: 18px;
+        margin-right: 32px;
+    }
+
+    .header-social-media-icons {
+        fill: var(--color-one);
+    }
+
+    .header-social-media-icons:hover,
+    .header-social-media-icons:focus {
+        fill: var(--color-four);
+    }
+}
