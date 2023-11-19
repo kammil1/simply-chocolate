@@ -18,3 +18,8 @@
     --color-seventeen:#F5F4F4;
     --color-eighteen:#FFFFFF1A;
 }
+
+.image-class {
+    display: block;
+    max-width: 100%;
+    height: auto;}
