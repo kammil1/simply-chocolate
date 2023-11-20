@@ -134,7 +134,14 @@ line-height: 18px; /* 128.571% */
     {
       display: flex;
       gap:24px;
-      
-    }
 
+    }
+ 
+  }
+  @media screen and ( min-width: 1200px) 
+  {
+    .container
+    {
+      width: 1200px;
+    }
   }
