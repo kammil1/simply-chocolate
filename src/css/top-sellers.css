@@ -43,9 +43,10 @@ font-weight: 400;
 line-height: 18px; /* 128.571% */
 letter-spacing: -0.28px;
 
+
   }
   .ts_textt
-  {
+  { 
     padding-top: 20px;
     padding-bottom: 32px;
   }
@@ -150,12 +151,53 @@ text-transform: uppercase;
     {
       width: 768px;;
     }
-    .footer_end
-    
+  
+    .ts_flex
+    {display: flex;}
+    .ts_first {
+      padding-top: 32px;
+      justify-content: flex-end;
+     text-align: center;
+      display: flex;
+      gap: 14px;
+     
+    }
+    .ts_photo
+    {
+      width: 344px;
+    }
+.ts_text
+{
+  color: #111;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; /* 128.571% */
+letter-spacing: -0.28px;
+}
+  }
+  @media screen and (min-width: 1200px) {
+    .section {
+      width: 1200px;
+      padding-bottom: 72px;
+    }
+  
+    .container {
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+    .ts_hidden
+    {
+      display: block;
+    }
+    .ts_desktop
     {
       display: flex;
-      gap:24px;
+      gap:16px;
+    }
+    .ts_pic1
+    {
       
     }
-
   }
