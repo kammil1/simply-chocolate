@@ -1,0 +1,737 @@
+:root {
+  --main-text-color: #fff;
+  --main-company-color: #fd9222;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.images {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* -------------------------------------- MOBILE (to 375px - not responsive) -----------------------------------------*/
+
+.section {
+  width: 374px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-background {
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+    url(../images/hero/chocolate-covered-cocoa-powder.jpg),
+    lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+  background-image: url(../images/hero/chocolate-covered-cocoa-powder.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 395px;
+  padding-bottom: 72px;
+  width: 335px;
+  height: 621px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.hero-title {
+  color: var(--main-text-color);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em;
+  letter-spacing: -0.6px;
+  width: 295px;
+  height: 72px;
+  margin-bottom: 32px;
+}
+
+.hero-button-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.hero-buttons {
+  width: 295px;
+}
+
+.hero-first-button {
+  border-radius: 100px;
+  background: var(--main-company-color);
+  border: none;
+  color: var(--main-text-color);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 28px;
+}
+
+.hero-second-button {
+  border-radius: 100px;
+  border: 1px solid var(--main-text-color);
+  background: transparent;
+  color: var(--main-text-color);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  width: 159px;
+  height: 41px;
+}
+
+.hero-button-second-flex {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-scroll-down {
+  color: var(--main-text-color);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.16em;
+  letter-spacing: -0.36px;
+  background: transparent;
+}
+
+.hero-button-icon {
+  width: 28px;
+  height: 28px;
+  background-color: var(--main-text-color);
+  border-radius: 100px;
+  border: none;
+}
+
+.hero-button-icon {
+  width: 28px;
+  height: 28px;
+  border: none;
+}
+
+.hero-button-vector {
+  width: 16px;
+  height: 16px;
+}
+
+/* ----------------------- DATA MODAL WINDOW ------------------------ */
+
+.data-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 331px;
+  height: 800px;
+  border-radius: 15px;
+  background-color: #fafafa;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 24px;
+}
+
+.hero-modal-close-button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  right: 24px;
+  background-color: var(--background-color-2);
+  fill: var(--main-page-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 250ms var(--transition-variable),
+    border 250ms var(--transition-variable);
+}
+
+.hero-modal-logo {
+  color: #fd9222;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  padding: 32px 0;
+}
+
+.hero-logo {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}
+
+.hero-modal-labels {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.16em;
+  letter-spacing: -0.24px;
+}
+
+.hero-modal-input {
+  color: rgba(64, 64, 64, 0.3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 263px;
+  height: 45px;
+  padding-left: 18px;
+  cursor: pointer;
+}
+
+.hero-modal-textarea {
+  color: rgba(64, 64, 64, 0.3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  width: 263px;
+  min-height: 91px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  resize: none;
+  padding-left: 18px;
+  padding-top: 16px;
+  cursor: pointer;
+}
+
+.hero-modal-input:focus,
+.hero-modal-textarea:focus,
+.hero-modal-input:hover,
+.hero-modal-textarea:hover {
+  box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+}
+
+.hero-modal-first-box {
+  margin-bottom: 18px;
+}
+
+.hero-modal-second-box {
+  margin-top: 8px;
+}
+
+.hero-modal-third-box {
+  margin-top: 14px;
+}
+
+.hero-modal-submit-button {
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
+  display: flex;
+  justify-content: center;
+  width: 109px;
+  height: 41px;
+}
+
+.hero-send {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 28px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* -------------------------------------------- MOBILE (responsive) ---------------------------------------------------*/
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    width: 767px;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
+
+/* --------------------------------------------------- TABLET --------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  .section {
+    width: 768px;
+    padding-bottom: 72px;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .hero-background {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+      url('../images/hero/chocolate-covered-cocoa-powder-tablet.jpg'),
+      lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+    background-image: url('../images/hero/chocolate-covered-cocoa-powder-tablet.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 671px;
+    padding-right: 180px;
+    width: 704px;
+    height: 890px;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+
+  .hero-title {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.21em;
+    letter-spacing: -0.84px;
+    width: 484px;
+    padding-left: 40px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 624px;
+  }
+
+  .hero-button-flex {
+    display: flex;
+    gap: 14px;
+    padding-left: 40px;
+    width: 624px;
+  }
+
+  .hero-first-button {
+    border-radius: 100px;
+    background: var(--main-company-color);
+    border: none;
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 144px;
+    height: 45px;
+  }
+
+  .hero-second-button {
+    border-radius: 100px;
+    border: 1px solid var(--main-text-color);
+    background: transparent;
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 183px;
+    height: 45px;
+  }
+
+  .hero-button-third-flex {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .hero-button-second-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-scroll-down {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28em;
+    letter-spacing: -0.42px;
+    background: transparent;
+    width: 78px;
+  }
+
+  .hero-button-icon {
+    width: 38px;
+    height: 38px;
+    border: none;
+  }
+
+  .hero-button-vector {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* --------------------------------------------------- DESKTOP --------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+  .section {
+    width: 768px;
+    padding-bottom: 72px;
+  }
+
+  .container {
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .hero-background {
+    background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+      url('../images/hero/chocolate-covered-cocoa-powder-desktop.jpg'),
+      lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+    background-image: url('../images/hero/chocolate-covered-cocoa-powder-desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 381px;
+    padding-right: 180px;
+    width: 1136px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 30px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 1056px;
+  }
+
+  .hero-button-flex {
+    width: 1056px;
+  }
+
+  .hero-first-button {
+    border-radius: 100px;
+    background: var(--main-company-color);
+    border: none;
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 144px;
+    height: 45px;
+  }
+
+  .hero-second-button {
+    border-radius: 100px;
+    border: 1px solid var(--main-text-color);
+    background: transparent;
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 183px;
+    height: 45px;
+  }
+
+  .hero-scroll-down {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28em;
+    letter-spacing: -0.42px;
+    background: transparent;
+  }
+}
+
+/* -------------------------------------- DATA MODAL WINDOW ------------------------------------ */
+
+.data-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms var(--transition-variable), visibility 250ms var(--transition-variable);
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  background-color: var(--background-color-modal-window);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  transition: transform 250ms var(--transition-variable);
+  padding: 72px 24px 24px 24px;
+}
+
+.modal-box-paragraph {
+  color: var(--main-page-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.modal-form-first-box {
+  margin-bottom: 8px;
+}
+
+.modal-form-label {
+  color: var(--main-border-color);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.modal-form-second-box {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus {
+  border-color: var(--main-page-color-2);
+}
+
+.modal-form-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--main-page-color-2);
+}
+
+.modal-form-comment-box {
+  margin-bottom: 16px;
+}
+
+.modal-form-textarea {
+  color: rgba(46, 47, 66, 0.4);
+  width: 100%;
+  height: 120px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  resize: none;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-textarea:focus {
+  border-color: var(--main-page-color-2);
+}
+
+.modal-form-fourth-box {
+  margin-bottom: 24px;
+}
+
+.modal-form-privacy-label {
+  display: block;
+  color: var(--main-border-color);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+}
+
+.user-privacy-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-privacy-input:checked + .modal-form-privacy-label .user-privacy-box {
+  background-color: var(--active-links-color);
+  border: none;
+  fill: var(--main-text-color-2);
+}
+
+.terms-conditions-text {
+  padding-left: 8px;
+}
+
+.privacy-policy-link {
+  color: var(--main-page-color-2);
+}
+
+.form-send-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  color: var(--background-color);
+  background: var(--main-page-color-2);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  right: 24px;
+  background-color: var(--background-color-2);
+  fill: var(--main-page-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 250ms var(--transition-variable),
+    border 250ms var(--transition-variable);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: var(--active-links-color);
+  border: none;
+  fill: var(--background-color);
+}
+
+.close-button-icon {
+  transition: fill 250ms var(--transition-variable);
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}

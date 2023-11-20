@@ -1,1 +1,138 @@
-<section><h1>.</h1></section>
+<section class="section hero-background">
+  <div class="container">
+    <h1 class="visually-hidden">.</h1>
+    <div class="hero-buttons">
+      <h2 class="hero-title">
+        Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+      </h2>
+      <div class="hero-button-third-flex">
+        <div class="hero-button-flex">
+          <button class="hero-first-button" type="button" data-modal-open>Buy now</button>
+          <button class="hero-second-button" type="button">How it’s made</button>
+        </div>
+        <div class="hero-button-second-flex">
+          <p class="hero-scroll-down">scroll down</p>
+          <button class="hero-button-icon" type="button">
+            <svg class="hero-button-vector">
+              <use href="./images/icons.svg#icon-fi-rr-angle-small-left"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--------------------------------------------MODAL ---------------------------------------------->
+<div class="data-modal-backdrop is-hidden" data-modal>
+  <div class="hero-modal-box">
+    <button class="hero-modal-close-button" type="button" data-modal-close>
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 6L6 18"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M6 6L18 18"
+          stroke="#111111"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <h1 class="hero-modal-logo">BUY <span class="hero-logo">NOW</span></h1>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <form>
+      <div class="hero-modal-first-box">
+        <label for="user-name" class="hero-modal-labels">Personal information</label>
+        <div class="hero-modal-second-box">
+          <input
+            class="hero-modal-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+          />
+        </div>
+        <div class="hero-modal-third-box">
+          <input
+            class="hero-modal-input"
+            type="text"
+            name="user-surname"
+            id="user-surname"
+            placeholder="Surname"
+          />
+        </div>
+      </div>
+      <div class="hero-modal-first-box">
+        <label for="email" class="hero-modal-labels">Email</label>
+        <div class="hero-modal-second-box">
+          <input
+            class="hero-modal-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+      </div>
+      <div class="hero-modal-first-box">
+        <label for="phone-number" class="hero-modal-labels">Phone number</label>
+        <div class="hero-modal-second-box">
+          <input
+            class="hero-modal-input"
+            type="phone-number"
+            name="phone-number"
+            id="phone-number"
+            placeholder="Phone number"
+            required
+          />
+        </div>
+      </div>
+      <div class="hero-modal-first-box">
+        <label for="card-number" class="hero-modal-labels">Card number</label>
+        <div class="hero-modal-second-box">
+          <input
+            class="hero-modal-input"
+            type="card-number"
+            name="card-number"
+            id="card-number"
+            placeholder="Enter card"
+            required
+          />
+        </div>
+      </div>
+      <div class="hero-modal-first-box">
+        <label for="user-comment" class="hero-modal-labels">Comment</label>
+        <div class="hero-modal-second-box">
+          <textarea
+            class="hero-modal-textarea"
+            name="user-comment"
+            id="user-comment"
+            placeholder="Enter text"
+          ></textarea>
+        </div>
+      </div>
+      <button class="hero-modal-submit-button" type="submit" data-modal-close>
+        <span class="hero-send">Submit</span>
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="/js/modal.js"></script>
