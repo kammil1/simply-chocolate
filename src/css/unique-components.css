@@ -1,0 +1,47 @@
+/*desktop*/
+@media (min-width: 1200px) {
+
+.unique-components-h2 {
+    color: var(--color-one);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    width: 411px;
+    margin: auto;
+}
+
+.unique-components-h2-span {
+    color: #FD9222;
+}
+
+.unique-components-h2-paragraf {
+    color: var(--color-one);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    width: 492px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.unique-components-ul-desktop {
+    display: flex;
+    gap: 19px;
+    justify-content: center;
+}
+
+.unique-components-ul-mobile{
+    display: none;
+}
+
+}
