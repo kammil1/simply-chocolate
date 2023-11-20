@@ -56,11 +56,12 @@ ol {
 }
 
 .hero-background {
-  /* background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
-    url(), lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
-  background-image: url(); */
-  background-repeat: no-repeat;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+    url('../images/hero/chocolate-covered-cocoa-powder.jpg'),
+    lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
+  background-image: url('../images/hero/chocolate-covered-cocoa-powder.jpg');
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding-top: 395px;
   padding-bottom: 72px;
