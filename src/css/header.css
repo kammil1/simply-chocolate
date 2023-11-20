@@ -62,11 +62,16 @@
        transform: translateX(0);
    }
 
+   .menu-container {
+    display: flex;
+    justify-content: center;
+   }
+
    .menu-toggle.close {
        cursor: pointer;
        position: absolute;
-       top: 24px;
-       right: 24px;
+       top: 20px;
+       right: 20px;
        border-radius: 50%;
        border: 1px solid rgba(0, 0, 0, 0.1);
        background-color: transparent;
@@ -74,9 +79,7 @@
    }
 
    .mobile-menu-ul {
-        margin-top: 136px;
-        margin-left: 50px;
-   }
+        margin-top: 136px;   }
 
    .mobile-menu-link {
         color: var(--color-two);
@@ -90,6 +93,20 @@
         display: block;
         margin-bottom: 24px;
    }
+
+    .mobile-menu-social-media-icons-instagram {
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    
+    .mobile-menu-social-media-icons-twitter {
+        cursor: pointer;
+        position: absolute;
+        bottom: 20px;
+        left: 60px;
+        }
 
    .header-navigation-hamburger-icons {
        fill: var(--color-one);
@@ -105,7 +122,7 @@
 }
 
 /*tablet*/
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .header {
         display: flex;
         justify-content: center;
@@ -181,17 +198,20 @@
         cursor: pointer;
         position: absolute;
         top: 24px;
-        right: 24px;
+        right: 32px;
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: transparent;
         opacity: 0, 1;
     }
 
+    .menu-container {
+        display: flex;
+        justify-content: center;
+        }
+
     .mobile-menu-ul {
-        margin-top: 156px;
-        margin-left: 85px;
-    }
+        margin-top: 156px;    }
     
     .mobile-menu-link {
         color: var(--color-two);
@@ -212,7 +232,7 @@
     }
 
     .header-navigation-hamburger-icons {
-        stroke: var(--color-one);
+        fill: var(--color-one);
     }
 
     .header-navigation-ul {
@@ -222,6 +242,20 @@
     .header-social-media-icons-ul {
         display: none;
     }
+
+    .mobile-menu-social-media-icons-instagram {
+        cursor: pointer;
+        position: absolute;
+        bottom: 24px;
+        left: 32px;
+    }
+   
+    .mobile-menu-social-media-icons-twitter {
+        cursor: pointer;
+        position: absolute;
+        bottom: 24px;
+        left: 74px;
+        }
 }
 
 /*desktop*/
@@ -267,6 +301,10 @@
         display: none;
     }
 
+    .js-menu-container {
+        display: none;
+    }
+
     .header-navigation-ul {
         list-style: none;
         display: flex;
@@ -296,6 +334,8 @@
 
     .header-social-media-icons {
         fill: var(--color-one);
+        stroke: var(--color-two);
+        stroke-width: 2px;
     }
 
     .header-social-media-icons:hover,
