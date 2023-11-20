@@ -217,6 +217,8 @@ ol {
 
   .hero-button-flex {
     display: flex;
+    justify-content: center;
+    text-align: center;
     gap: 14px;
     padding-left: 40px;
     width: 624px;
