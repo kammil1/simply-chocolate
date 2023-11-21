@@ -9,3 +9,44 @@
         <button data-modal-open class="review-button" type="button">Leave a review</button>
     </div>
 </section>
+
+<div class="review-modal-window is-hidden" data-modal>
+    <div class="review-modal-body">
+        <button class="review-modal-close" data-modal-close type="button">
+            <svg class="review-close-icon" fill="currentcolor" width="24" height="24"
+                xlmns="http://www.w3.org/2000/svg">
+                <use href="./images/icons.svg#icon-Icon"></use>
+            </svg>
+        </button>
+        <div role="group" arial-labelby="contact-details-head">
+            <p class="review-modal-window-title">
+                leave a review about <span class="review-modal-window-title-color">our chocolate</span>
+            </p>
+        </div>
+        <form class="review-form">
+            <label class="hidden" for="user-name">Name</label>
+            <input class="review-modal-form-field" type="text" name="user-name" id="user-name" placeholder="Name"
+                required />
+            <label class="hidden" for="email">Email</label>
+            <input class="review-modal-form-field" type="email" name="email" id="email" placeholder="Enter your email"
+                required />
+            <div class="review-modal-form-phone-field">
+                <label class="hidden" for="phone">Phone number</label>
+                <input class="review-modal-form-field" type="tel" name="phone" id="phone" placeholder="Phone number"
+                    required />
+                <div class="review-modal-form-icon">
+                    <svg class="review-flag-icon" width="32" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./images/icons.svg#icon-Frame"></use>
+                    </svg>
+                    <p class="review-modal-phone">+380</p>
+                </div>
+            </div>
+            <label class="hidden" for="user-comment">Comment</label>
+            <textarea class="review-modal-text-field" name="user-comment" id="user-comment"
+                placeholder="Enter text"></textarea>
+        </form>
+        <button class="review-modal-button" data-modal-close type="submit">Send</button>
+    </div>
+</div>
+<script src="/js/modal.js"></script>
+<script src="/src/index.js" type="module"></script>
