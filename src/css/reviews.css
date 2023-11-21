@@ -6,13 +6,11 @@
 .review-section {
     margin-bottom: 72px;
 }
-
 .review-containter {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-
 .review-title {
     color: var(--color-four);
     text-align: center;
@@ -23,11 +21,9 @@
     text-transform: uppercase;
     margin-bottom: 32px;
 }
-
 .review-title-black {
     color: var(--color-one);
 }
-
 .review-content-box {
     width: 335px;
     height: 200px;
@@ -67,4 +63,7 @@
     background-color: var(--color-four);
     border: none;
     color: var(--color-two);
+}
+@media screen and (min-width: 768px){
+    
 }
