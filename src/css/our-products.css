@@ -1,0 +1,56 @@
+body {
+    font-family: "Montserrat";
+    background-color: #fafafa;
+}
+
+.container {
+    width: 335px;
+}
+
+/* ================================================= MOBILE 👇 ========================================= */
+
+.our-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.038rem;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.our-title-products {
+    color: #FD9222;
+}
+
+.our-card {}
+
+.our-list {
+    list-style: none;
+}
+
+
+
+
+
+
+/* ================================================= RESPONSIVE 👇 ========================================= */
+@media screen and (min-width:375px) and (max-width: 767px) {
+    .container {
+        width: 375px;
+    }
+}
+
+/* ================================================= TABLET 👇 ========================================= */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 768px;
+    }
+}
+
+/* ================================================= DESKTOP 👇 ========================================= */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
