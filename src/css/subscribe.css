@@ -1,14 +1,20 @@
 /* ================================================= MOBILE 👇 ========================================= */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .container {
-    max-width: 767px;
-    padding: 0 15px;
-    margin: 0 auto;
+    display: flex;
+    width: 335px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
   }
 
   .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    display: flex;
+    min-width: 375px;
+    padding: 62px 20px 63px 20px;
+    justify-content: center;
+    align-items: center;
   }
 
   .subscribe-title {
@@ -27,14 +33,17 @@
   }
 
   .subscribe-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      url('../images/subscribe/subscribe_mobile@1x.jpg'),
+      lightgray -412px -477.287px / 320% 372.105% no-repeat;
     margin: 0 auto;
     max-width: 1440px;
+    height: 370px;
     display: flex;
     align-items: center;
     padding: 188px 0;
-    background-image: url('../images/subscribe/subscribe_mobile@1x.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 69%;
     background-size: cover;
   }
 
@@ -47,7 +56,7 @@
     }
   }
 
-  .subscribe-paragraph-chocolate {
+  .subscribe-paragraph {
     max-width: 326px;
     color: #fff;
     text-align: center;
@@ -269,16 +278,19 @@
 
 /* ================================================= TABLET 👇 ========================================= */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 758px;
-    padding: 0 15px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    display: inline-flex;
+    padding: 72px 151px 72px 150px;
+    justify-content: center;
+    align-items: center;
   }
 
   .subscribe-title {
@@ -297,15 +309,16 @@
   }
 
   .subscribe-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      url('../images/subscribe/Subscribe_tablet@1x.jpg'),
+      lightgray -215px -481.157px / 156.25% 375.122% no-repeat;
     margin: 0 auto;
-    max-width: 1157px;
     height: 370px;
     display: flex;
     align-items: center;
     padding: 72px 0;
-    background-image: url('../images/subscribe/Subscribe_tablet@1x.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 69%;
     background-size: cover;
   }
 
@@ -318,7 +331,7 @@
     }
   }
 
-  .subscribe-paragraph-chocolate {
+  .subscribe-paragraph {
     max-width: 467px;
     color: #fff;
     text-align: center;
@@ -326,7 +339,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 1.3;
     letter-spacing: -0.28px;
     margin-bottom: 24px;
   }
@@ -534,17 +547,18 @@
 
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1158px) {
-  /* co jest potrzebne dla desktopu */
-
   .container {
-    max-width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    display: inline-flex;
+    padding: 72px 367px 72px 366px;
+    justify-content: center;
+    align-items: center;
   }
 
   .subscribe-title {
@@ -563,15 +577,17 @@
   }
 
   .subscribe-section {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+      url('../images/subscribe/Subscribe_desktop@1x.jpg'),
+      lightgray 0px -481.157px / 100% 375.122% no-repeat;
     margin: 0 auto;
-    min-width: 1157px;
+    min-width: 1200px;
     display: flex;
     align-items: center;
     height: 370px;
     padding: 72px 0;
-    background-image: url('../images/subscribe/Subscribe_desktop@1x.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 69%;
     background-size: cover;
   }
 
@@ -584,7 +600,7 @@
     }
   }
 
-  .subscribe-paragraph-chocolate {
+  .subscribe-paragraph {
     max-width: 467px;
     color: #fff;
     text-align: center;
