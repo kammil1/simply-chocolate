@@ -171,7 +171,7 @@
     border-top-left-radius: 15px;
     background: url('../images/subscribe/unsplash1.jpg');
 
-    @media (min-device-pixel-ratio: 2),
+    /* @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -263,7 +263,7 @@
       clip-path: inset(100%);
       clip: rect(0 0 0 0);
       overflow: hidden;
-    }
+    } */
   }
 }
 
