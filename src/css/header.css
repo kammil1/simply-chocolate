@@ -36,52 +36,53 @@
         margin-right: 138px;
     }
 
-/*hamburger do mobile menu*/
+    /*hamburger do mobile menu*/
 
-   .menu-toggle.open {
-       margin-right: 20px;
-       border: none;
-       background-color: transparent;
-       cursor: pointer;
-       display: flex;
-   }
+    .menu-toggle.open {
+        margin-right: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+    }
 
-   .js-menu-container {
-       background-color: var(--color-ten);
-       z-index: 999;
-       position: fixed;
-       top: 0;
-       left: 0;
-       width: 100vw;
-       height: 100vh;
-       transform: translateX(100%);
-       transition: transform 250ms ease-in-out;
-   }
+    .js-menu-container {
+        background-color: var(--color-ten);
+        z-index: 999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+    }
 
-   .js-menu-container.is-open {
-       transform: translateX(0);
-   }
+    .js-menu-container.is-open {
+        transform: translateX(0);
+    }
 
-   .menu-container {
-    display: flex;
-    justify-content: center;
-   }
+    .menu-container {
+        display: flex;
+        justify-content: center;
+    }
 
-   .menu-toggle.close {
-       cursor: pointer;
-       position: absolute;
-       top: 20px;
-       right: 20px;
-       border-radius: 50%;
-       border: 1px solid rgba(0, 0, 0, 0.1);
-       background-color: transparent;
-       opacity: 0, 1;
-   }
+    .menu-toggle.close {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: transparent;
+        opacity: 0, 1;
+    }
 
-   .mobile-menu-ul {
-        margin-top: 136px;   }
+    .mobile-menu-ul {
+        margin-top: 136px;
+    }
 
-   .mobile-menu-link {
+    .mobile-menu-link {
         color: var(--color-two);
         color: #FFF;
         font-family: Montserrat;
@@ -92,7 +93,7 @@
         letter-spacing: -0.28px;
         display: block;
         margin-bottom: 24px;
-   }
+    }
 
     .mobile-menu-social-media-icons-instagram {
         cursor: pointer;
@@ -100,17 +101,17 @@
         bottom: 20px;
         left: 20px;
     }
-    
+
     .mobile-menu-social-media-icons-twitter {
         cursor: pointer;
         position: absolute;
         bottom: 20px;
         left: 60px;
-        }
+    }
 
-   .header-navigation-hamburger-icons {
-       fill: var(--color-one);
-   }
+    .header-navigation-hamburger-icons {
+        fill: var(--color-one);
+    }
 
     .header-navigation-ul {
         display: none;
@@ -159,7 +160,7 @@
         margin-right: 503px;
     }
 
-/*hamburger do mobile menu*/
+    /*hamburger do mobile menu*/
 
     .menu-toggle.open {
         margin-right: 32px;
@@ -176,7 +177,7 @@
         cursor: pointer;
         display: flex;
     }
-    
+
     .js-menu-container {
         background-color: var(--color-ten);
         z-index: 999;
@@ -189,11 +190,11 @@
         transition: transform 250ms ease-in-out;
         color: var(--color-two);
     }
-    
+
     .js-menu-container.is-open {
         transform: translateX(0);
     }
-    
+
     .menu-toggle.close {
         cursor: pointer;
         position: absolute;
@@ -208,11 +209,12 @@
     .menu-container {
         display: flex;
         justify-content: center;
-        }
+    }
 
     .mobile-menu-ul {
-        margin-top: 156px;    }
-    
+        margin-top: 156px;
+    }
+
     .mobile-menu-link {
         color: var(--color-two);
         color: #FFF;
@@ -226,7 +228,7 @@
         margin-bottom: 24px;
     }
 
-    .mobile-menu-link:hover, 
+    .mobile-menu-link:hover,
     .mobile-menu-link:focus {
         color: var(--color-four);
     }
@@ -249,13 +251,13 @@
         bottom: 24px;
         left: 32px;
     }
-   
+
     .mobile-menu-social-media-icons-twitter {
         cursor: pointer;
         position: absolute;
         bottom: 24px;
         left: 74px;
-        }
+    }
 }
 
 /*desktop*/
@@ -321,7 +323,8 @@
         font-style: normal;
         font-weight: 500;
         line-height: 16px;
-        letter-spacing: -0.28px;    }
+        letter-spacing: -0.28px;
+    }
 
     .header-social-media-icons-ul {
         list-style: none;
