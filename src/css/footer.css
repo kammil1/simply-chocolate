@@ -122,6 +122,7 @@ line-height: 18px; /* 128.571% */
     {
     width:100%;
     }
+
   }
   @media screen and ( min-width: 768px) 
   {
@@ -136,5 +137,45 @@ line-height: 18px; /* 128.571% */
       gap:24px;
       
     }
-
+    .footer_social
+    {
+      display: flex;
+      justify-content: flex-end;
+      text-align: right;
+    }
+    .footer_media
+    {
+     display: flex;
+     
+     flex-direction: row;
+      text-align: right;
+      gap:14px;
+    }
+    .footer_top
+    {
+     
+  padding-top: 50px;
+  
+    }
+    .footer_test
+    {
+      display: inline-block;
+    }
+    .footer_flex
+    {padding-left: 124px;
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+    }
+    .f_columns
+    {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+.flexit
+{
+  display: flex;
+}
   }
