@@ -152,6 +152,7 @@ text-transform: uppercase;
     {
       width: 768px;;
     }
+    
   
     .ts_flex
     {display: flex;}
@@ -211,6 +212,11 @@ letter-spacing: -0.28px;
     .ts_fot
     {
       padding-right: 16px;
+    }
+    .ts_textt
+    { 
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
    
   }
