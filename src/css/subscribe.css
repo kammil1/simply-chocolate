@@ -309,10 +309,10 @@
   }
 
   .subscribe-section {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-      url('../images/subscribe/Subscribe_tablet@1x.jpg'),
-      lightgray -215px -481.157px / 156.25% 375.122% no-repeat;
-    margin: 0 auto;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), */
+      /* url('../images/subscribe/Subscribe_tablet@1x.jpg'), */
+      /* lightgray -215px -481.157px / 156.25% 375.122% no-repeat;
+    margin: 0 auto; */
     height: 370px;
     display: flex;
     align-items: center;
