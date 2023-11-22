@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #111111;
+    background-color: #FAFAFA;
+    font-weight: 600;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.how-section {
+    max-width: 374px;
+}
+
+.how-container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ================================================= MOBILE 👇 ========================================= */
+
+
+/*.how-container{
+    width: 335px;
+    margin: 0 20px; /*było margin : 0 auto*/
+/*padding: 0 15px; }/*nie miałem paddingu*/
+
+.how-header-title {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 20px;
+    letter-spacing: -3%;
+    line-height: 24px;
+}
+
+.how-made {
+    color: #FD9222;
+}
+
+.how-list {
+    width: 291px;
+}
+
+.how-title {
+    width: 307px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.ul-style {
+    list-style: none;
+    margin-bottom: 20px;
+    max-width: 960px;
+    min-width: 320px;
+}
+
+.how-description {
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -2%;
+}
+
+.how-text {
+    width: 291px;
+    margin-left: 14px;
+}
+
+.how-info {
+    padding-top: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    /*width: 335px;*/
+}
+
+.how-image {
+    /* background-image: url(../images/how-images/imagex1.jpg); */
+    max-width: 335px;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.how-new {
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================================= RESPONSIVE 👇 ========================================= */
+@media screen and (min-width:375px) and (max-width: 767px) {
+    .how-section {
+        /*width: 767px;*/
+        max-width: 100%;
+    }
+
+    .how-desktop {
+        max-width: 767px;
+    }
+
+    .how-image {
+        /*max-width: 100%; nie umiem załadować poprawnego zdjęcia*/
+        display: block;
+    }
+
+    /*@media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .how-image {background-image: url(../Simply-Chocolate/images/desktopx2.jpg);}
+            } */
+
+    .how-info {
+        max-width: 100%;
+    }
+
+    /*how-list{width:100%} -jest potrzebne?*/
+}
+
+/* ================================================= TABLET 👇 ========================================= */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .how-section {
+        max-width: 100%;
+    }
+
+    .how-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-image {
+        max-width: 614px;
+        height: 400px;
+        margin: 0 auto;
+        /* background-image: url(../images/how-images/tabletx1.jpg); */
+    }
+
+    .how-info {
+        width: 614px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .how-title {
+        width: 350px;
+    }
+
+    .how-list {
+        width: 550px;
+    }
+}
+
+/* ================================================= DESKTOP 👇 ========================================= */
+@media screen and (min-width: 1200px) {
+    .how-section {
+        max-width: 100%;
+    }
+
+    .how-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .how-image {
+        max-width: 100%;
+        width: 600px;
+        height: 400px;
+        margin-left: 17px;
+        /* background-image: url(../images/how-images/desktop.jpg); */
+    }
+
+    .how-desktop {
+        display: flex;
+        justify-content: center;
+        /*width: 1136px;*/
+    }
+
+    .how-info {
+        margin-left: 20px;
+        width: 516px;
+        height: 400px;
+        padding: 32px;
+    }
+
+    .how-title {
+        width: 350px;
+    }
+
+    .how-list {
+        width: 436px;
+    }
+
+    .how-description {
+        margin-bottom: 24px;
+    }
+
+    .how-last {
+        margin-bottom: 0;
+    }
+}

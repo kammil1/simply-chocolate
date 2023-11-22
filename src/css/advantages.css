@@ -1,3 +1,19 @@
+body {
+    font-family: Montserrat;
+}
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0px;
+}
+.image-class {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container {
     width: 375px;
     padding-left: 20px;
@@ -6,6 +22,7 @@
 .advantages-section {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 72px;
     margin-bottom: 72px;
     background-color: var(--color-ten);
 }
@@ -28,6 +45,8 @@
 }
 .advantages-list-element {
     padding-right: 28px;
+    position: relative;
+    width: 308px;
 }
 .advantages-icon {
     display: flex;
@@ -38,22 +57,25 @@
     border: 1px solid;
     border-radius: 50%;
     margin-bottom: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+}
+.advantages-icon svg {
+    fill: currentColor;
 }
 .advantages-text-head {
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 18px;
     line-height: normal;
+    color: var(--color-two);
 }
 .advantages-text {
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.28px;
     width: 308px;
+    color: var(--color-nine);
 }
-
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
@@ -63,6 +85,7 @@
     .advantages-section {
         padding-top: 50px;
         padding-bottom: 50px;
+        margin-top: 50px;
         margin-bottom: 100px;
     }
     .advantages-list {
@@ -71,11 +94,30 @@
         gap: 32px;
     }
 }
-
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
-        padding-left: 50px;
-        padding-right: 50px;
+    }
+    .advantages-section {
+        margin-top: 72px;
+        margin-bottom: 128px;
+    }
+    .advantages-line {
+        height: 124px;
+        width: 326px;
+        border-right: 1px solid var(--color-nine);
+        position: absolute;
+        top: 60px;
+    }
+    .advantages-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 70px;
+    }
+    .advantages-list:first-child {
+        margin-left: 18px;
+    }
+    .advantages-list:last-child {
+        margin-right: 18px;
     }
 }
