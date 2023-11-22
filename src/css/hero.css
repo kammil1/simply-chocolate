@@ -313,6 +313,10 @@ ol {
   margin-top: 14px;
 }
 
+.hero-link {
+  text-decoration: none;
+}
+
 .hero-modal-submit-button {
   border-radius: 100px;
   background: #fd9222;
