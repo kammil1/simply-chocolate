@@ -1,4 +1,6 @@
-
+body {
+    font-family: Montserrat;
+}
 li,
 h1,
 h2,
@@ -20,6 +22,7 @@ h5 {
 .advantages-section {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-top: 72px;
     margin-bottom: 72px;
     background-color: var(--color-ten);
 }
@@ -56,6 +59,9 @@ h5 {
     margin-bottom: 22px;
     border: 1px solid rgba(255, 255, 255, 0.50);
 }
+.advantages-icon svg {
+    fill: currentColor;
+}
 .advantages-text-head {
     font-weight: 600;
     font-size: 18px;
@@ -79,6 +85,7 @@ h5 {
     .advantages-section {
         padding-top: 50px;
         padding-bottom: 50px;
+        margin-top: 50px;
         margin-bottom: 100px;
     }
     .advantages-list {
@@ -90,6 +97,10 @@ h5 {
 @media screen and (min-width: 1200px) {
     .container {
         width: 1200px;
+    }
+    .advantages-section {
+        margin-top: 72px;
+        margin-bottom: 128px;
     }
     .advantages-line {
         height: 124px;

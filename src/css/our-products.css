@@ -1,0 +1,122 @@
+body {
+    font-family: "Montserrat";
+    background-color: #fafafa;
+    margin: 0;
+}
+
+.container {
+    width: 375px;
+}
+
+/* ================================================= MOBILE 👇 ========================================= */
+
+.our-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.038rem;
+    text-transform: uppercase;
+}
+
+.our-title-products {
+    color: #FD9222;
+}
+
+.our-div {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.our-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.our-card {
+    width: 335px;
+    margin: 0;
+}
+
+.our-taste {
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: -0.023rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.our-kind {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.015rem;
+    margin: 2px 0 18px 0;
+}
+
+.our-price {
+    padding: 8px 20px;
+    border-radius: 100px;
+    background-color: #fafafa;
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    margin-bottom: 32px;
+}
+
+.our-li {
+    margin-bottom: 18px;
+}
+
+
+/* ================================================= RESPONSIVE 👇 ========================================= */
+@media screen and (min-width:375px) and (max-width: 767px) {
+    .container {
+        width: 375px;
+    }
+
+    .our-card {
+        width: 375px;
+        margin: 0 auto;
+    }
+}
+
+/* ================================================= TABLET 👇 ========================================= */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 768px;
+    }
+
+
+    .our-card {
+        width: 768px;
+        margin: 0 auto;
+        
+    }
+
+    .our-list{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/* ================================================= DESKTOP 👇 ========================================= */
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+
+    .our-card {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

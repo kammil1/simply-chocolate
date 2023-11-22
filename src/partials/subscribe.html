@@ -1,5 +1,5 @@
-<section class="subscribe-section section">
-  <div class="container subscribe-header">
+<section class="subscribe-section section-subscribe">
+  <div class="subscribe-container subscribe-header">
     <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
     <p class="subscribe-paragraph">
       From the velvety texture to the rich and complex flavor, our New Chocolate is a true
@@ -7,13 +7,13 @@
       handcrafted with the utmost care, each piece is a work of art that is sure to please.
     </p>
 
-    <button class="subscribe-button" type="button" data-modal-open>Subscribe</button>
+    <button class="subscribe-button" type="button" subscribe-data-modal-open>Subscribe</button>
   </div>
 </section>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="subscribe-backdrop is-hidden" subscribe-data-modal>
   <div class="subscribe-modal">
-    <button type="button" class="subscribe-close-btn" data-modal-close>
+    <button type="button" class="subscribe-close-btn" subscribe-data-modal-close>
       <svg class="subscribe-close-icon" width="24" height="24">
         <use href="./images/icons.svg#icon-x-close"></use>
       </svg>
@@ -34,9 +34,7 @@
           placeholder="Enter your email"
         />
       </label>
-      <button class="button subscribey-button" type="submit">Submit</button>
+      <button class="subscribey-button" type="submit">Submit</button>
     </form>
   </div>
 </div>
-
-<script src="/js/modal.js"></script>
