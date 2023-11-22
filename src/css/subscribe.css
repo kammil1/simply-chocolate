@@ -1,4 +1,17 @@
 /* ================================================= MOBILE 👇 ========================================= */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .subscribe-section {
+    margin: 72px 0;
+    padding: 0 20px;
+  }
+
+  .subscribe-container {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .subscribe-container {
     display: flex;
@@ -123,7 +136,7 @@
   .subscribe-close-btn {
     display: flex;
     background: none;
-    color: #ffffff;
+    fill: #ffffff;
     justify-content: center;
     min-height: 24px;
     min-width: 24px;
@@ -140,7 +153,7 @@
   .subscribe-close-btn:hover,
   .subscribe-close-btn:focus {
     border: none;
-    color: #fd9222;
+    fill: #fd9222;
   }
 
   .subscribe-close-icon {
@@ -399,7 +412,7 @@
   .subscribe-close-btn {
     display: flex;
     background: none;
-    color: #ffffff;
+    fill: #ffffff;
     justify-content: center;
     min-height: 24px;
     min-width: 24px;
@@ -668,7 +681,7 @@
   .subscribe-close-btn {
     display: flex;
     background: none;
-    color: #ffffff;
+    fill: #ffffff;
     justify-content: center;
     min-height: 24px;
     min-width: 24px;
