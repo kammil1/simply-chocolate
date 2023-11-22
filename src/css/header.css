@@ -250,6 +250,7 @@
         position: absolute;
         bottom: 24px;
         left: 32px;
+        stroke: var(--color-two);
     }
 
     .mobile-menu-social-media-icons-twitter {
@@ -257,6 +258,7 @@
         position: absolute;
         bottom: 24px;
         left: 74px;
+        stroke: var(--color-two);
     }
 }
 
@@ -336,13 +338,11 @@
     }
 
     .header-social-media-icons {
-        fill: var(--color-one);
-        stroke: var(--color-two);
-        stroke-width: 2px;
+        stroke: var(--color-one);
     }
 
     .header-social-media-icons:hover,
     .header-social-media-icons:focus {
-        fill: var(--color-four);
+        stroke: var(--color-four);
     }
 }
