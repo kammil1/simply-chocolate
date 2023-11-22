@@ -50,6 +50,7 @@ ol {
 .container {
   margin: 0 auto;
   padding: 0 20px;
+  margin-bottom: 72px;
 }
 
 .hero-background {
@@ -170,15 +171,14 @@ ol {
 
 .hero-modal-box {
   position: absolute;
-  top: 50%;
+  top: 600px;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 331px;
-  height: 800px;
   border-radius: 15px;
   background-color: #fafafa;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 24px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .hero-modal-close-button {
@@ -194,8 +194,8 @@ ol {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 250ms var(--transition-variable),
-    border 250ms var(--transition-variable);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-modal-logo {
@@ -220,6 +220,34 @@ ol {
   line-height: 1.2em;
   letter-spacing: -0.6px;
   text-transform: uppercase;
+}
+
+.hero-modal-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 16px;
+  margin-bottom: 32px;
+}
+
+.hero-modal-choco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  width: 263px;
+  height: 85px;
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+
+.hero-modal-choco-button {
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
 }
 
 .hero-modal-labels {
@@ -293,6 +321,7 @@ ol {
   justify-content: center;
   width: 109px;
   height: 41px;
+  margin-bottom: 32px;
 }
 
 .hero-send {
@@ -440,6 +469,123 @@ ol {
   .hero-button-vector {
     width: 22px;
     height: 22px;
+  }
+
+  /*----------------- OKNO MODALNE TABLET ------------------*/
+
+  .hero-modal-box {
+    padding: 48px;
+    top: 700px;
+  }
+
+  .hero-images {
+    width: 120px;
+    height: 107px;
+  }
+
+  .hero-modal-list {
+    margin-bottom: 40px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero-modal-choco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 160px;
+    height: 196px;
+  }
+
+  .hero-modal-choco-button {
+    padding: 8px 27px;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fafafa;
+  }
+
+  .hero-modal-labels {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28em;
+    letter-spacing: -0.28px;
+  }
+
+  .hero-modal-input {
+    color: rgba(64, 64, 64, 0.3);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    width: 513px;
+    height: 66px;
+    padding-left: 24px;
+    cursor: pointer;
+  }
+
+  .hero-modal-textarea {
+    color: rgba(64, 64, 64, 0.3);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    width: 513px;
+    min-height: 137px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    resize: none;
+    padding-left: 24px;
+    padding-top: 22px;
+    cursor: pointer;
+  }
+
+  .hero-modal-input:focus,
+  .hero-modal-textarea:focus,
+  .hero-modal-input:hover,
+  .hero-modal-textarea:hover {
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+  }
+
+  .hero-modal-first-box {
+    margin-bottom: 18px;
+  }
+
+  .hero-modal-second-box {
+    margin-top: 8px;
+  }
+
+  .hero-modal-submit-button {
+    border-radius: 100px;
+    background: #fd9222;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 133px;
+    height: 45px;
+    margin-bottom: 48px;
+  }
+
+  .hero-send {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 14px 40px;
   }
 }
 
