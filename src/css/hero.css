@@ -43,7 +43,7 @@ ol {
 
 /* -------------------------------------- MOBILE (to 375px - not responsive) -----------------------------------------*/
 
-.section {
+.hero-section {
   width: 374px;
 }
 
@@ -63,7 +63,6 @@ ol {
   background-size: cover;
   padding-top: 395px;
   padding-bottom: 72px;
-  width: 335px;
   height: 621px;
   margin: 0 auto;
   border-radius: 30px;
@@ -355,7 +354,7 @@ ol {
 /* --------------------------------------------------- TABLET --------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
-  .section {
+  .hero-section {
     width: 768px;
     padding-bottom: 72px;
   }
@@ -375,7 +374,6 @@ ol {
     background-size: cover;
     padding-top: 671px;
     padding-right: 180px;
-    width: 704px;
     height: 890px;
     margin: 0 auto;
     border-radius: 30px;
@@ -594,7 +592,7 @@ ol {
 /* --------------------------------------------------- DESKTOP --------------------------------------------------------*/
 
 @media screen and (min-width: 1200px) {
-  .section {
+  .hero-section {
     width: 768px;
     padding-bottom: 72px;
   }
