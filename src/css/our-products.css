@@ -96,9 +96,16 @@ body {
         width: 768px;
     }
 
+
     .our-card {
         width: 768px;
         margin: 0 auto;
+        
+    }
+
+    .our-list{
+        display: flex;
+        flex-direction: row;
     }
 }
 
