@@ -312,6 +312,10 @@ ol {
   margin-top: 14px;
 }
 
+.hero-link {
+  text-decoration: none;
+}
+
 .hero-modal-form-icon {
   position: absolute;
   top: 10px;
