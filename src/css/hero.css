@@ -103,6 +103,7 @@ ol {
   font-weight: 600;
   line-height: normal;
   padding: 12px 28px;
+  cursor: pointer;
 }
 
 .hero-second-button {
@@ -117,6 +118,7 @@ ol {
   line-height: normal;
   width: 159px;
   height: 41px;
+  cursor: pointer;
 }
 
 .hero-button-second-flex {
@@ -142,12 +144,7 @@ ol {
   background-color: var(--main-text-color);
   border-radius: 100px;
   border: none;
-}
-
-.hero-button-icon {
-  width: 28px;
-  height: 28px;
-  border: none;
+  cursor: pointer;
 }
 
 .hero-button-vector {
@@ -306,10 +303,35 @@ ol {
 
 .hero-modal-second-box {
   margin-top: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .hero-modal-third-box {
   margin-top: 14px;
+}
+
+.hero-modal-form-icon {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 25px;
+  width: 74px;
+  border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+
+.hero-modal-phone {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
 }
 
 .hero-modal-submit-button {
@@ -419,6 +441,7 @@ ol {
     line-height: normal;
     width: 144px;
     height: 45px;
+    cursor: pointer;
   }
 
   .hero-second-button {
@@ -433,6 +456,7 @@ ol {
     line-height: normal;
     width: 183px;
     height: 45px;
+    cursor: pointer;
   }
 
   .hero-button-third-flex {
@@ -464,6 +488,7 @@ ol {
     width: 38px;
     height: 38px;
     border: none;
+    cursor: pointer;
   }
 
   .hero-button-vector {
@@ -567,6 +592,18 @@ ol {
     margin-top: 8px;
   }
 
+  .hero-modal-form-icon {
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 25px;
+    width: 74px;
+    border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+  }
+
   .hero-modal-submit-button {
     border-radius: 100px;
     background: #fd9222;
@@ -641,6 +678,7 @@ ol {
     line-height: normal;
     width: 144px;
     height: 45px;
+    cursor: pointer;
   }
 
   .hero-second-button {
@@ -655,6 +693,7 @@ ol {
     line-height: normal;
     width: 183px;
     height: 45px;
+    cursor: pointer;
   }
 
   .hero-scroll-down {
