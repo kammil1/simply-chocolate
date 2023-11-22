@@ -313,6 +313,7 @@
       url('../images/subscribe/subscribe_tablet@1x.jpg'),
       lightgray -215px -481.157px / 156.25% 375.122% no-repeat;
     margin: 0 auto;
+
     height: 370px;
     display: flex;
     align-items: center;
@@ -329,7 +330,7 @@
     .subscribe-section {
       background: url('../images/subscribe/subscribe_tablet@2x.jpg');
     }
-  }
+  } 
 
   .subscribe-paragraph {
     max-width: 467px;
@@ -580,7 +581,7 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
       url('../images/subscribe/subscribe_desktop@1x.jpg'),
       lightgray 0px -481.157px / 100% 375.122% no-repeat;
-    margin: 0 auto;
+    margin: 0 auto; 
     min-width: 1200px;
     display: flex;
     align-items: center;
@@ -598,7 +599,7 @@
     .subscribe-section {
       background: url('../images/subscribe/subscribe_desktop@2x.jpg');
     }
-  }
+  } 
 
   .subscribe-paragraph {
     max-width: 467px;
