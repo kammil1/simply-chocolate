@@ -1,13 +1,10 @@
 .review-section {
     margin-bottom: 72px;
 }
-
 .review-containter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    margin-top: 72px;
+    margin-bottom: 72px;
 }
-
 .review-title {
     color: var(--color-four);
     text-align: center;
@@ -18,12 +15,11 @@
     text-transform: uppercase;
     margin-bottom: 32px;
 }
-
 .review-title-black {
     color: var(--color-one);
 }
-
 .review-content-box {
+    position: relative;
     width: 335px;
     height: 200px;
     padding: 56px 18px 42px 18px;
@@ -32,7 +28,12 @@
     box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
     margin-bottom: 32px;
 }
-
+.review-person-photo {
+    position: absolute;
+    top: -40px;
+    left: 132px;
+    border-radius: 50%;
+}
 .review-person-name {
     text-align: center;
     font-size: 18px;
@@ -40,14 +41,20 @@
     line-height: 1.3;
     margin-bottom: 24px;
 }
-
+.review-content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 32px;
+}
 .review-content {
     text-align: center;
     font-size: 14px;
+    font-weight: 400;
     line-height: 1.28;
     letter-spacing: -0.28px;
 }
-
 .review-button {
     width: 165px;
     height: 41px;
@@ -60,18 +67,17 @@
     font-size: 14px;
     cursor: pointer;
 }
-
 .review-button:focus,
 .review-button:hover {
     background-color: var(--color-four);
     border: none;
     color: var(--color-two);
-
 }
 
 /* style dla modala */
 .review-modal-window {
     position: fixed;
+    inset: 0 0 auto;
     top: 0;
     left: 0;
     width: 100%;
@@ -80,13 +86,11 @@
     pointer-events: all;
     background-color: rgba(46, 47, 66, 0.6);
 }
-
 .review-modal-window.is-hidden {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
-
 .review-modal-body {
     position: absolute;
     top: 50%;
@@ -99,11 +103,9 @@
     padding: 32px 24px;
     transition: transform 250ms;
 }
-
 .review-close-icon {
     fill: currentColor;
 }
-
 .review-modal-close {
     position: absolute;
     top: 14px;
@@ -119,12 +121,10 @@
     cursor: pointer;
     padding: 5px;
 }
-
 .review-modal-close:focus,
 .review-modal-close:hover {
     color: var(--color-four);
 }
-
 .review-modal-window-title {
     font-size: 20px;
     font-weight: 600;
@@ -134,7 +134,6 @@
     margin-top: 0px;
     margin-bottom: 32px;
 }
-
 .review-modal-window-title-color {
     font-size: 20px;
     font-weight: 600;
@@ -143,13 +142,11 @@
     text-transform: uppercase;
     color: var(--color-four);
 }
-
 .review-modal-phone {
     font-size: 14px;
     font-weight: 500;
     letter-spacing: -0.28px;
 }
-
 .review-modal-form-field {
     width: 263px;
     height: 45px;
@@ -163,17 +160,14 @@
     letter-spacing: -0.28px;
     font-weight: 400;
 }
-
 .review-modal-form-phone-field {
     position: relative;
     display: flex;
     align-items: center;
 }
-
 .review-modal-form-phone-field input {
     padding-left: 102px;
 }
-
 .review-modal-form-icon {
     position: absolute;
     top: 10px;
@@ -185,7 +179,6 @@
     width: 74px;
     border-right: 1.5px solid rgba(17, 17, 17, 0.05);
 }
-
 .review-modal-text-field {
     width: 263px;
     height: 91px;
@@ -200,14 +193,12 @@
     letter-spacing: -0.28px;
     font-weight: 400;
 }
-
 .review-form {
     display: flex;
     flex-direction: column;
     gap: 14px;
     margin-bottom: 18px;
 }
-
 .review-modal-button {
     width: 93px;
     height: 41px;
@@ -218,87 +209,97 @@
     font-size: 14px;
     cursor: pointer;
 }
-
 .review-modal-button:focus,
 .review-modal-button:hover {
     background-color: var(--color-twelve);
     color: var(--color-four);
 }
+
 @media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .review-section {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .review-content-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 28px;
+        margin-top: 50px;
+    }
     .review-modal-body {
-            width: 517px;
-            height: 628px;
-            background-color: var(--color-eight);
-            border-radius: 15px;
-            padding: 40px;
-        }
-    
-        .review-modal-close {
-            top: 24px;
-            right: 24px;
-            width: 28px;
-            height: 28px;
-            padding: 6px;
-        }
-    
-        .review-modal-window-title {
-            font-size: 24px;
-            line-height: 1.17;
-            letter-spacing: -0.72px;
-            margin-bottom: 40px;
-        }
-    
-        .review-modal-window-title-color {
-            font-size: 24px;
-            line-height: 1.17;
-            letter-spacing: -0.72px;
-            color: var(--color-four);
-        }
-    
-        .review-modal-phone {
-            font-size: 18px;
-            letter-spacing: -0.36px;
-        }
-    
-        .review-modal-form-field {
-            width: 100%;
-            height: 66px;
-            padding: 22px 24px;
-            font-size: 18px;
-            letter-spacing: -0.36px;
-        }
-    
-        .review-modal-form-phone-field input {
-            padding-left: 177px;
-        }
-    
-        .review-flag-icon {
-            width: 32px;
-            height: 24px;
-        }
-    
-        .review-modal-form-icon {
-            top: 17px;
-            left: 24px;
-            gap: 18px;
-            height: 32px;
-            width: 125px;
-        }
-    
-        .review-modal-text-field {
-            width: 100%;
-            height: 137px;
-            padding: 22px 24px;
-            font-size: 18px;
-            letter-spacing: -0.36px;
-        }
-    
-        .review-form {
-            gap: 18px;
-        }
-    
-        .review-modal-button {
-            width: 117px;
-            height: 45px;
-        }
+        width: 517px;
+        height: 628px;
+        background-color: var(--color-eight);
+        border-radius: 15px;
+        padding: 40px;
+    }
+    .review-modal-close {
+        top: 24px;
+        right: 24px;
+        width: 28px;
+        height: 28px;
+        padding: 6px;
+    }
+    .review-modal-window-title {
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.72px;
+        margin-bottom: 40px;
+    }
+    .review-modal-window-title-color {
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: -0.72px;
+        color: var(--color-four);
+    }
+    .review-modal-phone {
+        font-size: 18px;
+        letter-spacing: -0.36px;
+    }
+    .review-modal-form-field {
+        width: 100%;
+        height: 66px;
+        padding: 22px 24px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+    }
+    .review-modal-form-phone-field input {
+        padding-left: 177px;
+    }
+    .review-flag-icon {
+         width: 32px;
+        height: 24px;
+    }
+    .review-modal-form-icon {
+        top: 17px;
+        left: 24px;
+        gap: 18px;
+        height: 32px;
+        width: 125px;
+    }
+    .review-modal-text-field {
+        width: 100%;
+        height: 137px;
+        padding: 22px 24px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+    }
+    .review-form {
+        gap: 18px;
+    }
+    .review-modal-button {
+        width: 117px;
+        height: 45px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+    .review-section {
+        margin-top: 128px;
+    }
 }
