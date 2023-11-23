@@ -670,6 +670,13 @@ ol {
     line-height: normal;
     padding: 14px 40px;
   }
+
+  .hero-button-third-flex {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 153px;
+  }
 }
 
 /* --------------------------------------------------- DESKTOP --------------------------------------------------------*/
@@ -758,5 +765,12 @@ ol {
     line-height: 1.28em;
     letter-spacing: -0.42px;
     background: transparent;
+  }
+
+  .hero-button-third-flex {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 585px;
   }
 }
