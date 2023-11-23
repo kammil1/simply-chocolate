@@ -1,7 +1,6 @@
-svg line {
-  stroke: var(--color-two);
-}
-  svg line {
+
+
+.f_color {
       stroke: var(--color-two);
       /* Stylowanie obrysu linii za pomocą zmiennej */
     }
