@@ -284,6 +284,10 @@ ol {
   cursor: pointer;
 }
 
+.hero-modal-input-number {
+  padding-left: 110px;
+}
+
 .hero-modal-textarea {
   color: rgba(64, 64, 64, 0.3);
   font-family: Montserrat;
@@ -327,7 +331,7 @@ ol {
 .hero-modal-form-icon {
   position: absolute;
   top: 10px;
-  left: 18px;
+  left: 16px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -669,6 +673,10 @@ ol {
     font-weight: 600;
     line-height: normal;
     padding: 14px 40px;
+  }
+
+  .hero-modal-input-number {
+    padding-left: 150px;
   }
 }
 
