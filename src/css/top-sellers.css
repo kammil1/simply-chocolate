@@ -158,7 +158,7 @@ text-transform: uppercase;
   {display: flex;}
   .ts_first {
     padding-top: 32px;
-    padding-left: 567px;
+    padding-left: 180px;
     
    text-align: center;
     display: flex;
@@ -183,7 +183,7 @@ text-transform: uppercase;
   }
 .ts_text
 {
-  width: 407px;
+  width: 306px;
 color: #111;
 font-family: Montserrat;
 font-size: 14px;
@@ -231,6 +231,15 @@ letter-spacing: -0.28px;
   { width: 306px;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  .ts_first {
+    padding-top: 32px;
+    
+    padding-left: 567px;
+   text-align: center;
+    display: flex;
+    gap: 14px;
+   
   }
  
 }
