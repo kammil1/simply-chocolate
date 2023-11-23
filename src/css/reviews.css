@@ -1,5 +1,5 @@
 .review-section {
-    margin-bottom: 72px;
+    margin: 72px 0px;
 }
 .review-containter {
     margin-top: 72px;
@@ -13,7 +13,7 @@
     line-height: 1.2;
     letter-spacing: -0.6px;
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
 }
 .review-title-black {
     color: var(--color-one);
@@ -26,7 +26,6 @@
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
-    margin-bottom: 32px;
 }
 .review-person-photo {
     position: absolute;
@@ -47,6 +46,7 @@
     gap: 50px;
     justify-content: center;
     margin-top: 32px;
+    margin-bottom: 32px;
 }
 .review-content {
     text-align: center;
@@ -56,6 +56,7 @@
     letter-spacing: -0.28px;
 }
 .review-button {
+    display: block;
     width: 165px;
     height: 41px;
     padding: 12px 28px;
@@ -66,6 +67,7 @@
     text-align: center;
     font-size: 14px;
     cursor: pointer;
+    margin: 0px auto;
 }
 .review-button:focus,
 .review-button:hover {
@@ -126,10 +128,11 @@
     color: var(--color-four);
 }
 .review-modal-window-title {
+    width: 250px;
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: -1px;
+    letter-spacing: -0.6px;
     text-transform: uppercase;
     margin-top: 0px;
     margin-bottom: 32px;
@@ -141,6 +144,9 @@
     letter-spacing: -0.6px;
     text-transform: uppercase;
     color: var(--color-four);
+}
+.review-form label {
+    display: none;
 }
 .review-modal-phone {
     font-size: 14px;
@@ -155,10 +161,19 @@
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     border-radius: 8px;
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+.review-modal-form-field::placeholder {
     color: rgba(64, 64, 64, 0.30);
     font-size: 14px;
     letter-spacing: -0.28px;
     font-weight: 400;
+}
+.review-modal-form-field:focus-within {
+    border-color: var(--color-four);
 }
 .review-modal-form-phone-field {
     position: relative;
@@ -179,6 +194,12 @@
     width: 74px;
     border-right: 1.5px solid rgba(17, 17, 17, 0.05);
 }
+.review-flag-icon {
+    width: 24px;
+    height: 18px;
+    margin: 0px;
+    padding: 0px;
+}
 .review-modal-text-field {
     width: 263px;
     height: 91px;
@@ -188,6 +209,11 @@
     border-radius: 8px;
     box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
     resize: none;
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    font-weight: 400;
+}
+.review-modal-text-field::placeholder {
     color: rgba(64, 64, 64, 0.30);
     font-size: 14px;
     letter-spacing: -0.28px;
@@ -196,7 +222,7 @@
 .review-form {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 18px;
     margin-bottom: 18px;
 }
 .review-modal-button {
@@ -214,7 +240,11 @@
     background-color: var(--color-twelve);
     color: var(--color-four);
 }
-
+@media screen and (min-width: 320px) and (max-width: 375px){
+    .container {
+        width: 320px;
+    }
+}
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
@@ -223,11 +253,17 @@
         margin-top: 100px;
         margin-bottom: 100px;
     }
+    .review-title {
+        margin-bottom: 90px;
+    }
     .review-content-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 28px;
+        justify-content: left;
+        column-gap: 18px;
+        row-gap: 58px;
         margin-top: 50px;
+        margin-bottom: 50px;
     }
     .review-modal-body {
         width: 517px;
@@ -244,6 +280,7 @@
         padding: 6px;
     }
     .review-modal-window-title {
+        width: 298px;
         font-size: 24px;
         line-height: 1.17;
         letter-spacing: -0.72px;
@@ -265,12 +302,17 @@
         padding: 22px 24px;
         font-size: 18px;
         letter-spacing: -0.36px;
+        margin-bottom: 18px;
+    }
+    .review-modal-form-field::placeholder {
+        font-size: 18px;
+        letter-spacing: -0.36px;
     }
     .review-modal-form-phone-field input {
         padding-left: 177px;
     }
     .review-flag-icon {
-         width: 32px;
+        width: 32px;
         height: 24px;
     }
     .review-modal-form-icon {
@@ -284,6 +326,10 @@
         width: 100%;
         height: 137px;
         padding: 22px 24px;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+    }
+    .review-modal-text-field::placeholder {
         font-size: 18px;
         letter-spacing: -0.36px;
     }
@@ -301,5 +347,13 @@
     }
     .review-section {
         margin-top: 128px;
+    }
+    .review-content-list {
+        column-gap: 28px;
+        justify-content: center;
+    }
+    .review-content-box {
+        width: 360px;
+        padding: 58px 24px 48px 24px;
     }
 }
