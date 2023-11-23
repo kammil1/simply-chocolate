@@ -147,12 +147,12 @@
     right: 14px;
     z-index: 1;
     cursor: pointer;
+    border: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .subscribe-close-btn:hover,
   .subscribe-close-btn:focus {
-    border: none;
     fill: #fd9222;
   }
 
@@ -267,6 +267,8 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     border-radius: 25px;
+    border: none;
+    cursor: pointer;
   }
 
   .subscribey-button:hover,
@@ -423,13 +425,13 @@
     right: 14px;
     z-index: 1;
     cursor: pointer;
+    border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .subscribe-close-btn:hover,
   .subscribe-close-btn:focus {
-    border: none;
     fill: #fd9222;
   }
 
@@ -536,6 +538,8 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     border-radius: 25px;
+    border: none;
+    cursor: pointer;
   }
 
   .subscribey-button:hover,
@@ -692,13 +696,13 @@
     right: 14px;
     z-index: 1;
     cursor: pointer;
+    border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .subscribe-close-btn:hover,
   .subscribe-close-btn:focus {
-    border: none;
     fill: #fd9222;
   }
 
@@ -805,6 +809,8 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     border-radius: 25px;
+    border: none;
+    cursor: pointer;
   }
 
   .subscribey-button:hover,
