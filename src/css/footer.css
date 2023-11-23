@@ -158,7 +158,10 @@ line-height: 18px; /* 128.571% */
   padding-bottom: 32px;
     }
     .f_global
-    {display: flex;}
+    {
+      display: flex;
+      
+    }
     .footer_social
     {
       display: flex;
@@ -175,8 +178,12 @@ line-height: 18px; /* 128.571% */
     }
     .footer_top
     {
+      padding-bottom: 32px;
+      gap:4px;
      
+      border-bottom: 2px solid rgba(255, 255, 255, 0.10);
   padding-top: 50px;
+  
   
     }
     .footer_test
