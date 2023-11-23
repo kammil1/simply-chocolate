@@ -158,7 +158,8 @@ text-transform: uppercase;
   {display: flex;}
   .ts_first {
     padding-top: 32px;
-    justify-content: flex-end;
+    padding-left: 567px;
+    
    text-align: center;
     display: flex;
     gap: 14px;

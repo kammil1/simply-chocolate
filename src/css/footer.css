@@ -147,7 +147,8 @@ line-height: 18px; /* 128.571% */
     {
       display: flex;
       gap:24px;
-      
+      padding-top: 24px;
+      padding-bottom: 50px;
     }
     .f_try
     {padding-top: 50px;
