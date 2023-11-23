@@ -37,33 +37,33 @@
                 <use href="./images/icons.svg#icon-Icon"></use>
             </svg>
         </button>
-        <div role="group" arial-labelby="contact-details-head">
-            <p class="review-modal-window-title">
+        <form name="Reviews" class="review-form">
+            <div role="group" arial-labelby="reviews-head">
+                <p id="reviews-head" class="review-modal-window-title">
                 leave a review about <span class="review-modal-window-title-color">our chocolate</span>
-            </p>
-        </div>
-        <form class="review-form">
-            <label class="hidden" for="user-name">Name</label>
-            <input class="review-modal-form-field" type="text" name="user-name" id="user-name" placeholder="Name"
-                required />
-            <label class="hidden" for="email">Email</label>
-            <input class="review-modal-form-field" type="email" name="email" id="email" placeholder="Enter your email"
-                required />
-            <div class="review-modal-form-phone-field">
-                <label class="hidden" for="phone">Phone number</label>
-                <input class="review-modal-form-field" type="tel" name="phone" id="phone" placeholder="Phone number"
-                    required />
-                <div class="review-modal-form-icon">
-                    <svg class="review-flag-icon" width="32" height="24" xmlns="http://www.w3.org/2000/svg">
-                        <use href="./images/icons.svg#icon-Frame"></use>
-                    </svg>
+                </p>
+                <label for="user-name">Name</label>
+                <input class="review-modal-form-field" type="text" name="user-name" id="user-name" placeholder="Name"
+                required/>
+                <label for="email">Email</label>
+                <input class="review-modal-form-field" type="email" name="email" id="email" placeholder="Enter your email"
+                required/>
+                <div class="review-modal-form-phone-field">
+                    <label for="phone">Phone number</label>
+                     <input class="review-modal-form-field" type="tel" name="phone" id="phone" placeholder="Phone number"
+                    required/>
+                    <div class="review-modal-form-icon">
+                        <svg class="review-flag-icon" width="24" height="18" xmlns="http://www.w3.org/2000/svg">
+                            <use href="./images/icons.svg#icon-Frame"></use>
+                        </svg>
                     <p class="review-modal-phone">+380</p>
                 </div>
-            </div>
-            <label class="hidden" for="user-comment">Comment</label>
-            <textarea class="review-modal-text-field" name="user-comment" id="user-comment"
+                </div>
+                <label for="user-comment">Comment</label>
+                <textarea class="review-modal-text-field" name="user-comment" id="user-comment"
                 placeholder="Enter text"></textarea>
+            </div>
+            <button class="review-modal-button" data-modal-close type="submit">Send</button>
         </form>
-        <button class="review-modal-button" data-modal-close type="submit">Send</button>
     </div>
 </div>
