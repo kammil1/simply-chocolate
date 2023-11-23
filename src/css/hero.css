@@ -106,6 +106,11 @@ ol {
   cursor: pointer;
 }
 
+.hero-first-button:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
 .hero-second-button {
   border-radius: 100px;
   border: 1px solid var(--main-text-color);
@@ -121,9 +126,16 @@ ol {
   cursor: pointer;
 }
 
+.hero-second-button:hover {
+  background-color: #fafafa;
+  color: #fd9222;
+  border: 1px solid #fd9222;
+}
+
 .hero-button-second-flex {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 12px;
 }
 
@@ -312,8 +324,34 @@ ol {
   margin-top: 14px;
 }
 
-.hero-link {
-  text-decoration: none;
+.hero-modal-form-icon {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 25px;
+  width: 74px;
+  border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+
+.hero-modal-phone {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.hero-mastercard-icon {
+  position: absolute;
+  top: 2px;
+  left: 200px;
+  width: 32px;
+  height: 21px;
 }
 
 .hero-modal-form-icon {
@@ -435,7 +473,7 @@ ol {
 
   .hero-first-button {
     border-radius: 100px;
-    background: var(--main-company-color);
+    background: #fd9222;
     border: none;
     color: var(--main-text-color);
     font-family: Montserrat;
@@ -467,6 +505,7 @@ ol {
     display: inline-flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 153px;
   }
 
   .hero-button-second-flex {
@@ -500,16 +539,19 @@ ol {
     height: 22px;
   }
 
+  .hero-mastercard-icon {
+    position: absolute;
+    top: 2px;
+    left: 450px;
+    width: 32px;
+    height: 21px;
+  }
+
   /*----------------- OKNO MODALNE TABLET ------------------*/
 
   .hero-modal-box {
     padding: 48px;
     top: 700px;
-  }
-
-  .hero-images {
-    width: 120px;
-    height: 107px;
   }
 
   .hero-modal-list {
@@ -668,6 +710,13 @@ ol {
 
   .hero-button-flex {
     width: 1056px;
+  }
+
+  .hero-button-third-flex {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 585px;
   }
 
   .hero-first-button {
