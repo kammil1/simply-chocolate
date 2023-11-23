@@ -116,6 +116,7 @@
         position: absolute;
         bottom: 20px;
         left: 20px;
+        stroke: var(--color-two);
     }
 
     .mobile-menu-social-media-icons-twitter {
@@ -123,6 +124,7 @@
         position: absolute;
         bottom: 20px;
         left: 60px;
+        stroke: var(--color-two);
     }
 
     .header-navigation-hamburger-icons {
