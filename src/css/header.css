@@ -1,3 +1,15 @@
+/*mobile not responsive*/
+@media screen and (max-width: 375px) {
+    .header {
+    width: 374px;
+    }
+
+    .header-logo-link {
+    display: flex;
+    wrap: nowrap;
+    }
+}
+
 /*mobile*/
 @media (max-width: 768px) {
     .header {
@@ -29,6 +41,9 @@
         margin-top: 25px;
         margin-right: 4px;
         margin-bottom: 19px;
+        display: flex;
+        wrap: nowrap;
+        gap: 4px;
     }
 
     .header-logo-link-icons {
@@ -77,6 +92,7 @@
         background-color: transparent;
         opacity: 0, 1;
     }
+
 
     .mobile-menu-ul {
         margin-top: 136px;
