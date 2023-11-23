@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    width: 375px;
+    width: 335px;
 }
 
 /* ================================================= MOBILE 👇 ========================================= */
@@ -96,9 +96,12 @@ body {
         width: 768px;
     }
 
-    .our-card {
+    .our-list{
+        display: block;
+        column-count: 2;
+    }
+    .our-card{
         width: 768px;
-        margin: 0 auto;
     }
 }
 
@@ -107,9 +110,18 @@ body {
     .container {
         width: 1200px;
     }
-
+    
     .our-card {
-        width: 1200px;
+        width: 1136px;
         margin: 0 auto;
+    }
+    
+    .our-list {
+        display: block;
+        column-count: 3;
+    }
+    
+    .our-li {
+        width: 270px;
     }
 }
