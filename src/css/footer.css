@@ -10,6 +10,7 @@ svg line {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  stroke: var(--color-two);
 }
 
 ul {
@@ -29,6 +30,10 @@ a {
 .footer {
   background-color: #1E1823;
   ;
+}
+.f_color
+{
+  fill:var(--color-two);
 }
 
 .container {
