@@ -6,7 +6,7 @@
 
     .header-logo-link {
     display: flex;
-    wrap: nowrap;
+    flex-wrap: nowrap;
     }
 }
 
@@ -42,7 +42,7 @@
         margin-right: 4px;
         margin-bottom: 19px;
         display: flex;
-        wrap: nowrap;
+        flex-wrap: nowrap;
         gap: 4px;
     }
 
@@ -80,6 +80,8 @@
     .menu-container {
         display: flex;
         justify-content: center;
+        width: 220px;
+        
     }
 
     .menu-toggle.close {
@@ -227,6 +229,7 @@
     .menu-container {
         display: flex;
         justify-content: center;
+        width: 290px;
     }
 
     .mobile-menu-ul {
@@ -363,4 +366,9 @@
     .header-social-media-icons:focus {
         stroke: var(--color-four);
     }
+
+    .header-navigation-link:hover,
+    .header-navigation-link:focus {
+      color: var(--color-four);
+  }
 }
