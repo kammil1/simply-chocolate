@@ -42,5 +42,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="13" viewBox="0 0 28 13" fill="none">
 <path d="M21.5 0H6.5C2.91015 0 0 2.91015 0 6.5C0 10.0899 2.91015 13 6.5 13H21.5C25.0899 13 28 10.0899 28 6.5C28 2.91015 25.0899 0 21.5 0Z" fill="#FD9222"/>
 </svg>
+<symbol id="icon-Rectangle-5-2" viewBox="0 0 69 32">
+<path fill="#fd9222" d="M52.923 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
+</symbol>
+<symbol id="icon-Ellipse-3" viewBox="0 0 32 32">
+<path d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
+</symbol>
 </defs>
 </svg>
