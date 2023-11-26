@@ -87,86 +87,257 @@ a {
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-hidden {
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
-    skew(40deg, 40deg);
-}
-/*.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-}
-*/
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 408px;
-  min-height: 584px;
-  border-radius: 4px;
-  background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.backdrop {
+.data-modal-backdrop {
+  z-index: 1;
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close {
+
+.hero-modal-box {
+
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  background-color: #fafafa;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+  padding: 0 24px;
+  z-index: 10;
+}
+.review-modal-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 311px;
+  height: 471px;
+  background-color: var(--color-eight);
+  border-radius: 15px;
+  padding: 32px 24px;
+  transition: transform 250ms;
+}
+.hero-modal-close-button {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  right: 24px;
+  background-color: var(--background-color-2);
+  fill: var(--main-page-color);
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover {
-  background-color: #404bbf;
-  border: none;
-}
-.modal-close:focus {
-  background-color: #404bbf;
-  border: none;
-}
-.class_x {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.hero-modal-logo {
+  color: #fd9222;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  padding: 32px 0;
 }
 
-.modal-close:hover {
-  fill: #ffffff;
+.hero-logo {
+  color: #111;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
 }
-.modal-close:focus {
-  fill: #ffffff;
+
+.hero-modal-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 16px;
+  margin-bottom: 32px;
 }
-.overlay {
+
+.hero-modal-choco {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fff;
+  width: 263px;
+  height: 85px;
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+
+.hero-modal-choco-button {
+  padding: 6px 16px;
+  border-radius: 100px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  background: #fafafa;
+}
+
+.hero-modal-labels {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.16em;
+  letter-spacing: -0.24px;
+}
+
+.hero-modal-input {
+  color: rgba(64, 64, 64, 0.3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  width: 263px;
+  height: 45px;
+  padding-left: 18px;
+  cursor: pointer;
+}
+
+.hero-modal-textarea {
+  color: rgba(64, 64, 64, 0.3);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  width: 263px;
+  min-height: 91px;
+  border-radius: 8px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  resize: none;
+  padding-left: 18px;
+  padding-top: 16px;
+  cursor: pointer;
+}
+
+.hero-modal-input:focus,
+.hero-modal-textarea:focus,
+.hero-modal-input:hover,
+.hero-modal-textarea:hover {
+  box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+}
+
+.hero-modal-first-box {
+  margin-bottom: 18px;
+}
+
+.hero-modal-second-box {
+  margin-top: 8px;
   position: relative;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
+
+.hero-modal-third-box {
+  margin-top: 14px;
+}
+
+.hero-modal-form-icon {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 25px;
+  width: 74px;
+  border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+
+.hero-modal-phone {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.hero-mastercard-icon {
+  position: absolute;
+  top: 2px;
+  left: 200px;
+  width: 32px;
+  height: 21px;
+}
+
+.hero-modal-form-icon {
+  position: absolute;
+  top: 10px;
+  left: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 25px;
+  width: 74px;
+  border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+}
+
+.hero-modal-phone {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.hero-modal-submit-button {
+  border-radius: 100px;
+  background: #fd9222;
+  border: none;
+  display: flex;
+  justify-content: center;
+  width: 109px;
+  height: 41px;
+  margin-bottom: 32px;
+}
+
+.hero-send {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 28px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .ts_top {
   color: #111;
   font-family: Montserrat;
