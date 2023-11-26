@@ -410,7 +410,134 @@ a {
   .ts_flex {
     display: flex;
   }
+  .hero-modal-box {
+    padding: 48px;
+    top: 700px;
+  }
 
+  .hero-modal-list {
+    margin-bottom: 40px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero-modal-choco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    width: 160px;
+    height: 196px;
+  }
+
+  .hero-modal-choco-button {
+    padding: 8px 27px;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: #fafafa;
+  }
+
+  .hero-modal-labels {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28em;
+    letter-spacing: -0.28px;
+  }
+
+  .hero-modal-input {
+    color: rgba(64, 64, 64, 0.3);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    width: 513px;
+    height: 66px;
+    padding-left: 24px;
+    cursor: pointer;
+  }
+
+  .hero-modal-textarea {
+    color: rgba(64, 64, 64, 0.3);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.36px;
+    width: 513px;
+    min-height: 137px;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    resize: none;
+    padding-left: 24px;
+    padding-top: 22px;
+    cursor: pointer;
+  }
+
+  .hero-modal-input:focus,
+  .hero-modal-textarea:focus,
+  .hero-modal-input:hover,
+  .hero-modal-textarea:hover {
+    box-shadow: 0px 5.44492px 5.44492px 0px rgba(0, 0, 0, 0.03);
+  }
+
+  .hero-modal-first-box {
+    margin-bottom: 18px;
+  }
+
+  .hero-modal-second-box {
+    margin-top: 8px;
+  }
+
+  .hero-modal-form-icon {
+    position: absolute;
+    top: 20px;
+    left: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 25px;
+    width: 74px;
+    border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+  }
+
+  .hero-modal-submit-button {
+    border-radius: 100px;
+    background: #fd9222;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 133px;
+    height: 45px;
+    margin-bottom: 48px;
+  }
+
+  .hero-send {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 14px 40px;
+  }
+
+  .hero-button-third-flex {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 153px;
+  }
   .ts_first {
     padding-top: 32px;
     padding-left: 180px;
