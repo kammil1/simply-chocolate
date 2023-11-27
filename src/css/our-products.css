@@ -129,7 +129,8 @@ body {
     }
 
     .our-list {
-        display: block;
+        display: flex;
+        justify-content: center;
         column-count: 3;
     }
 
