@@ -7,7 +7,16 @@ body {
 .container {
     width: 335px;
 }
+.review-slider-elipse {
+    fill: rgba(17, 17, 17, 0.10);
+}
 
+.review-slider {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 32px;
+}
 /* ================================================= MOBILE 👇 ========================================= */
 
 .our-title {
@@ -17,6 +26,7 @@ body {
     line-height: 1.2;
     letter-spacing: -0.038rem;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .our-title-products {
@@ -115,6 +125,9 @@ body {
     .show2{
         display: flex;
     }
+    .our-hide-td{
+        display: none;
+    }
 }
 
 /* ================================================= DESKTOP 👇 ========================================= */
@@ -136,5 +149,9 @@ body {
 
     .our-li{
         width: 270px;
+    }
+
+    .our-hide-td {
+    display: none;
     }
 }
