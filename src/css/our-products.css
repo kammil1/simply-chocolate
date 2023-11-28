@@ -35,11 +35,10 @@ body {
 
 .our-list {
     list-style: none;
-    padding-left: 20px;
 }
 
 .our-card {
-    width: 335px;
+    max-width: 335px;
     margin: 0;
 }
 
@@ -87,7 +86,7 @@ body {
     }
 
     .our-card {
-        width: 375px;
+        max-width: 375px;
         margin: 0 auto;
     }
 }
@@ -102,7 +101,7 @@ body {
         text-align: center;
     }
     .our-card {
-        width: 768px;
+        max-width: 768px;
    
     }
     .our-list{
@@ -124,17 +123,24 @@ body {
     }
 
     .our-card {
-        width: 1136px;
+        max-width: 1136px;
         margin: 0 auto;
     }
 
     .our-list {
         display: flex;
+        flex-direction: row;
         justify-content: center;
-        column-count: 3;
     }
 
     .our-li{
         width: 270px;
+    }
+    .show2 {
+        display: flex
+    }
+        
+    .show3 {
+        display: block;
     }
 }
