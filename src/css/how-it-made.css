@@ -25,7 +25,9 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.how-title-made {
+    max-width: 375px;
+}
 /* ================================================= MOBILE 👇 ========================================= */
 .how-header-title {
     text-align: center;
@@ -65,7 +67,7 @@ img {
 }
 
 .how-text {
-    width: 291px;
+    max-width: 291px;
     margin-left: 14px;
 }
 
@@ -77,7 +79,6 @@ img {
     display: flex;
     flex-direction: column;
     padding-left: 14px;
-    /*width: 335px;*/
 }
 
 .how-image {
@@ -95,37 +96,28 @@ img {
 /* ================================================= RESPONSIVE 👇 ========================================= */
 @media screen and (min-width:375px) and (max-width: 767px) {
     .how-section {
-        /*width: 767px;*/
-        max-width: 100%;
+        max-width: 375px;
     }
 
     .how-desktop {
-        max-width: 767px;
+        max-width: 375px;
     }
 
     .how-image {
-        /*max-width: 100%; nie umiem załadować poprawnego zdjęcia*/
         display: block;
     }
-
-    /*@media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                .how-image {background-image: url(../Simply-Chocolate/images/desktopx2.jpg);}
-            } */
-
     .how-info {
-        max-width: 100%;
+        max-width: 375px;
     }
-
-    /*how-list{width:100%} -jest potrzebne?*/
+    .how-title-made{
+        max-width: 375px;
+    }
 }
 
 /* ================================================= TABLET 👇 ========================================= */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .how-section {
-        max-width: 100%;
+        max-width: 768px;
     }
 
     .how-container {
@@ -141,7 +133,7 @@ img {
     }
 
     .how-info {
-        width: 614px;
+        max-width: 614px;
         margin-left: 77px;
         margin-top: 20px;
         padding-left: 0;
@@ -149,18 +141,18 @@ img {
     }
 
     .how-title {
-        width: 350px;
+        max-width: 350px;
     }
 
     .how-list {
-        width: 480px;
+        max-width: 480px;
     }
     .how-new{
         margin-left: 32px;
-        width: 350px;
+        max-width: 350px;
     }
     .how-text{
-        width: 553px;
+        max-width: 553px;
         margin-left: 48px;
     }
 }
@@ -168,7 +160,7 @@ img {
 /* ================================================= DESKTOP 👇 ========================================= */
 @media screen and (min-width: 1200px) {
     .how-section {
-        max-width: 100%;
+        max-width: 1200px;
     }
 
     .how-container {
@@ -187,7 +179,6 @@ img {
     .how-desktop {
         display: flex;
         justify-content: center;
-        /*width: 1136px;*/
     }
 
     .how-info {
@@ -207,8 +198,11 @@ img {
     .how-description {
         margin-bottom: 24px;
     }
-
     .how-last {
         margin-bottom: 0;
+    }
+    .how-title-made {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
